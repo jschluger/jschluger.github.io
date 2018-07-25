@@ -8,3 +8,6 @@ a.lowkey:hover, a.lowkey:active {
     text-decoration: inherit;
 }
 
+.icon {
+    height: 20px;
+}
