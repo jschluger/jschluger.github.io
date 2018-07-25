@@ -1,9 +1,10 @@
-.lowkey {
+a:link, a:visited {
     color: inherit;
     text-decoration: inherit;
 }
 
-.lowkey:hover {
+a:hover, a:active {
     color: inherit;
     text-decoration: inherit;
 }
+
