@@ -1,13 +1,4 @@
-a.lowkey:link, a.lowkey:visited {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-a.lowkey:hover, a.lowkey:active {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-.icon {
-    height: 20px;
+.content {
+    max-width: 500px;
+    margin: auto;
 }
