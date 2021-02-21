@@ -1,4 +1,4 @@
-var state = 0;
+var state = 1;
 var swap = function() {
     console.log("state=",state);
     if (state == 0) {
