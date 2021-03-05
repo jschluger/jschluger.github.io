@@ -19,7 +19,7 @@
 #nav {
     position: fixed;
     right: 3%;
-    top: 8%;
+    top: 5%;
     background: #528fd4;
     padding: 0.5%;
 }
@@ -52,7 +52,6 @@ a:hover, a:active, a:focus {
 
 .nav a {
     color: black;
-    text-decoration: none;
 }
 
 .nav a:hover {
