@@ -1,17 +1,20 @@
-.content {
+#content-overlay {
     width: 50%;
     margin: 1%;
     padding: 1%;
     position: absolute;
+}
+
+#content {
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
 
-.footer {
-    width: 50%;
+#footer {
+    width: 95%;
     margin: 1%;
     padding: 1%;
-    position: absolute;
+    float: right;
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }

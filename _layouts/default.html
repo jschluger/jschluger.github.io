@@ -6,11 +6,13 @@
   </head>
   <body>
     <img src="assets/fall1.jpg" alt="me" id="apples">
-    <div class="content">
-      {{ content }}
+    <div id="content-overlay">
+      <div id="content">
+	{{ content }}
+      </div>
     </div>
 
-    <div class="footer">
+    <div id="footer">
       {% include footer.html %}
     </div>
 
