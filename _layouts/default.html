@@ -9,11 +9,21 @@
     <div id="nav">
       <h1 class="bigger">Jack Schluger</h1>
       <h3>
-	<a href="https://jschluger.github.io/">Home</a>
+	<a href="https://jschluger.github.io/"
+	   {% if page.title == "" %}
+	   class="thispage"
+	   {% endif %}>
+	  Home</a>
 	&#183;
-	<a  href="https://jschluger.github.io/academic.html">Academic</a>
+	<a  href="https://jschluger.github.io/academic.html"
+	   {% if page.title == "Academic" %}
+	   class="thispage"
+	   {% endif %}>Academic</a>
 	&#183;
-	<a  href="https://jschluger.github.io/personal.html">Personal</a>
+	<a href="https://jschluger.github.io/personal.html"
+	   {% if page.title == "Personal" %}
+	   class="thispage"
+	   {% endif %}>Personal</a>
       </h3>
     </div>
     <div id="content-overlay">

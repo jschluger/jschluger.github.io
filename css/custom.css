@@ -64,6 +64,11 @@ a:hover, a:active, a:focus {
     text-align: right;
 }
 
+#nav .thispage {
+    color: #A15C67;
+}
+
+
 body {
     background-color: #BC8D9D;
     font-family: "Bookman Old Style";
