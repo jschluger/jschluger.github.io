@@ -11,10 +11,9 @@
 }
 
 #footer {
-    width: 95%;
+    width: 50%;
     margin: 1%;
     padding: 1%;
-    float: right;
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
