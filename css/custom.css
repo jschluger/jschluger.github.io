@@ -17,6 +17,10 @@
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
+
+#name {
+    position: absolute;
+    float:right;
 }
 
 .center {
