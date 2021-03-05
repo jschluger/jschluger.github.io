@@ -1,7 +1,9 @@
 .content {
-    max-width: 50%;
-    float: right;
+    width: 50%;
+    margin: 5%;
+    position: absolute;
     font-family: "Bookman Old Style";
+    background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
 
 .center {
@@ -12,4 +14,14 @@
 
 h1, h3 {
     text-align:center;
+}
+
+body {
+    background-color: #BC8D9D;
+    /* background-color: #cc99ff; */
+}
+
+#apples {
+    float: right;
+    width: 55%;
 }
