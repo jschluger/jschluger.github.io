@@ -18,7 +18,8 @@
 
 #nav {
     position: fixed;
-    right: 5%;
+    right: 3%;
+    top: 13%;
     background: #528fd4;
 }
 
@@ -34,6 +35,7 @@ h1, h2, h3, h4 {
 }
 h1.bigger {
     font-size: 55px;
+    margin: 0;
 }
 
 a {
@@ -44,6 +46,10 @@ a:visited {
 }
 a:hover, a:active, a:focus {
     color: #de804e;
+}
+
+a.nav-link {
+    color: black;
 }
 
 body {
