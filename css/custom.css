@@ -1,9 +1,10 @@
 #content-overlay {
     position: absolute;
+    width: 50%;
 }
 
 #content {
-    width: 50%;
+    width: 100%;
     margin: 1%;
     padding: 1%;
     background: rgba(240, 194, 204, 0.5)
