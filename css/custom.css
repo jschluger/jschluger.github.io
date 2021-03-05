@@ -1,11 +1,11 @@
 #content-overlay {
-    width: 50%;
-    margin: 1%;
-    padding: 1%;
     position: absolute;
 }
 
 #content {
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
