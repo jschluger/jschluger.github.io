@@ -6,20 +6,21 @@
     width: 50%;
     margin: 1%;
     padding: 1%;
-    background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
+    background: rgba(240, 194, 204, 0.5)
 }
 
 #footer {
     width: 50%;
     margin: 1%;
     padding: 1%;
-    background: rgba(240, 194, 234, 0.5) /* Green background with 30% opacity */
+    background: rgba(240, 194, 204, 0.5)
 }
 
 #name {
     position: fixed;
     right: 5%;
-    font-size: 75px;
+    font-size: 55px;
+    background: white;
 }
 
 .center {
