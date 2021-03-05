@@ -3,7 +3,7 @@
     width: 50%;
 }
 
-#content #footer {
+#content, #footer {
     width: 100%;
     margin: 1%;
     padding: 1%;
