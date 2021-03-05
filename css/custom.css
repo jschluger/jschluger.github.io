@@ -16,12 +16,12 @@
     background: rgba(240, 194, 204, 0.5)
 }
 
-#name {
+#nav {
     position: fixed;
     right: 5%;
-    font-size: 55px;
     background: #528fd4;
 }
+
 
 .center {
     display: block;
@@ -29,8 +29,11 @@
     margin-right: auto;
 }
 
-h1, h3 {
+h1, h2, h3, h4 {
     text-align:center;
+}
+h1.bigger {
+    font-size: 55px;
 }
 
 a {
