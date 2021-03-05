@@ -7,6 +7,16 @@
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
 }
 
+.footer {
+    width: 50%;
+    margin: 1%;
+    padding: 1%;
+    position: absolute;
+    font-family: "Bookman Old Style";
+    background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
+}
+}
+
 .center {
     display: block;
     margin-left: auto;
