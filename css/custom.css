@@ -1,6 +1,7 @@
 .content {
     width: 50%;
-    margin: 5%;
+    margin: 1%;
+    padding: 1%;
     position: absolute;
     font-family: "Bookman Old Style";
     background: rgba(240, 194, 204, 0.5) /* Green background with 30% opacity */
@@ -16,9 +17,18 @@ h1, h3 {
     text-align:center;
 }
 
+a {
+    color: #329c9c;
+}
+a:visited {
+    color: #74dbcc;
+}
+a:hover, a:active, a:focus {
+    color: #de804e;
+}
+
 body {
     background-color: #BC8D9D;
-    /* background-color: #cc99ff; */
 }
 
 #apples {
