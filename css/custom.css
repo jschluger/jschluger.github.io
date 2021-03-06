@@ -1,6 +1,8 @@
 #content-overlay {
     position: absolute;
     width: 50%;
+    z-index: 2;
+	
 }
 
 #content, #footer {
