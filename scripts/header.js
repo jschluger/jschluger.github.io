@@ -1,8 +1,8 @@
 var name = $('#name').text();
 var out = "";
 
-var red_f = 2/12;
-var blue_f = 1/12;
+var red_f = 1.5/12;
+var blue_f = 3/12;
 
 var RED = "#a05d68";
 var BLUE = "#282d44";
