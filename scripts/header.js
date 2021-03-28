@@ -44,7 +44,7 @@ function getCookieValue(name) {
   })
 
   if (value.length) {
-      return value[0].substring(nameString.length+1, value[0].length);
+      return value[0].substring(nameString.length, value[0].length);
   } else {
       return "";
   }
@@ -119,3 +119,4 @@ function rotate_colors_left() {
 
 $('#name-arrow-left').click(rotate_colors_left);
 $('#name-arrow-right').click(rotate_colors_right);
+B
