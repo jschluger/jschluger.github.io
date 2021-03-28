@@ -116,3 +116,6 @@ function rotate_colors_left() {
     document.cookie = COOKIE_NAME+"="+JSON.stringify(data)
     $('#name').html(decorate_name(NAME, data.colors));
 }
+
+$('#name-arrow-left').click(rotate_colors_left);
+$('#name-arrow-right').click(rotate_colors_right);
