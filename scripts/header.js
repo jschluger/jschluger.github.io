@@ -67,7 +67,7 @@ function main() {
     console.log(data);
     
     if ((!('c' in data)) || data.c >= MAX_C) {
-	console.log(!(c in data));
+	console.log(!('c' in data));
 	console.log( data.c == MAX_C);
 	console.log('case 1');
         data.c = 0;
