@@ -11,7 +11,7 @@ var COOKIE_NAME = "header";
 function decorate_name(name, colors) {
     var out = "";
     for (var i = 0; i < name.length; i++) {
-        if (name[i] == " ") out += " "
+        if (name[i] == " ") out += "<span> </span> "
         else out += '<span style="color:' + colors[i] + '">' + name[i] + '</span>';
 
     }
