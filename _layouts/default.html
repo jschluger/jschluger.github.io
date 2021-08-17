@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Jack Schluger &#183; {{ page.title }}</title>
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body>
-    <img src="assets/fall1.jpg" alt="me" id="apples">
-    <div id="nav">
-      <h1 class="bigger" id="name">Jack Schluger</h1>
-      <h2 class="name-arrow" id="name-arrow-left">&#8592; </h2>
-      <h2 class="name-arrow" id="name-arrow-right"> &#8594;</h2>
-      <h3>
-	<a href="https://jschluger.github.io/"
-	   {% if page.title == "Home" %}
-	   class="thispage"
-	   {% endif %}>
-	  Home</a>
-	&#183;
-	<a  href="https://jschluger.github.io/academic.html"
-	   {% if page.title == "Academic" %}
-	   class="thispage"
-	   {% endif %}>Academic</a>
-	&#183;
-	<a href="https://jschluger.github.io/teaching.html"
-	   {% if page.title == "Teaching" %}
-	   class="thispage"
-	   {% endif %}>
-	  Teaching</a>
-	&#183;
-	<a href="https://jschluger.github.io/personal.html"
-	   {% if page.title == "Personal" %}
-	   class="thispage"
-	   {% endif %}>Personal</a>
-      </h3>
-    </div>
-    <div id="content-overlay">
-      <div id="content">
-	{{ content }}
-      </div>
-    </div>
-    <div id="footer">
-      {% include footer.html %}
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/header.js"></script>
+<head>
+  <title>Jack Schluger &#183; {{ page.title }}</title>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
 
-  </body>
+<body>
+  <img src="assets/fall1.jpg" alt="me" id="apples">
+  <div id="nav">
+    <h1 class="bigger" id="name">Jack Schluger</h1>
+    <h2 class="name-arrow" id="name-arrow-left">&#8592; </h2>
+    <h2 class="name-arrow" id="name-arrow-right"> &#8594;</h2>
+    <h3>
+      <a href="https://jschluger.github.io/" {% if page.title=="Home" %} class="thispage" {% endif %}>
+        Home</a>
+      &#183;
+      <a href="https://jschluger.github.io/academic.html" {% if page.title=="Academic" %} class="thispage" {% endif
+        %}>Academic</a>
+      &#183;
+      <a href="https://jschluger.github.io/teaching.html" {% if page.title=="Teaching" %} class="thispage" {% endif %}>
+        Teaching</a>
+      &#183;
+      <a href="https://jschluger.github.io/personal.html" {% if page.title=="Personal" %} class="thispage" {% endif
+        %}>Personal</a>
+    </h3>
+  </div>
+  <div id="content-overlay">
+    <div id="content">
+      {{ content }}
+    </div>
+  </div>
+  <div id="footer">
+    {% include footer.html %}
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/header.js"></script>
+
+</body>
+
 </html>
