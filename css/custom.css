@@ -96,3 +96,16 @@ div#images {
     border: 2px solid black;
     width: 75%;
 }
+
+button#shuffle {
+    background-color: rgb(195, 88, 199);
+    border: none;
+    border-radius: 10px;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
