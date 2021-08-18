@@ -8,7 +8,9 @@ var shuffle = function () {
 	if (visible != null) {
 		visible.hidden = true;
 	}
-	visible = div.children()[Math.floor(Math.random() * n)];
+	var next = visible;
+	while (next == visible) next = div.children()[Math.floor(Math.random() * n)];
+	visible = next;
 	visible.hidden = false;
 };
 shuffle();
