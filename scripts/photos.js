@@ -6,12 +6,12 @@ var shuffle = function () {
 	console.log(div);
 	var n = div.children().length;
 	if (visible != null) {
-		visible.hidden = true;
+		visible.style.display = 'none'
 	}
 	var next = visible;
 	while (next == visible) next = div.children()[Math.floor(Math.random() * n)];
 	visible = next;
-	visible.hidden = false;
+	visible.style.display = 'inline';
 };
 shuffle();
 $("#shuffle").click(shuffle);
