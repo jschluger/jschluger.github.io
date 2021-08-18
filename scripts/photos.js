@@ -1,15 +1,13 @@
-var div = $("div#images");
-console.log(div);
 var visible = null;
 
 var shuffle = function () {
 	console.log(div);
-	var n = div.children().length;
+	var n = $('img.shuffle-image').length;
 	if (visible != null) {
 		visible.style.display = 'none'
 	}
 	var next = visible;
-	while (next == visible) next = div.children()[Math.floor(Math.random() * n)];
+	while (next == visible) next = $('img.shuffle-image')[Math.floor(Math.random() * n)];
 	visible = next;
 	visible.style.display = 'inline';
 };
