@@ -12,4 +12,4 @@ var shuffle = function () {
 	visible.hidden = false;
 };
 shuffle();
-$("#shuffle").click(shufle);
+$("#shuffle").click(shuffle);

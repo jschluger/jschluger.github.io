@@ -88,8 +88,11 @@ body {
     width: 55%;
 }
 
+div#images {
+    align-content: center;
+}
+
 .shuffle-image {
     border: 2px solid black;
     width: 75%;
-    align-content: center;
 }
