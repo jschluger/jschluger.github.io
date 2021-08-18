@@ -1,7 +1,6 @@
 var visible = null;
 
 var shuffle = function () {
-	console.log(div);
 	var n = $('img.shuffle-image').length;
 	if (visible != null) {
 		visible.style.display = 'none'
