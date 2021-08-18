@@ -6,10 +6,10 @@ var shuffle = function () {
 	console.log(div);
 	var n = div.children().length;
 	if (visible != null) {
-		visible.hide()
+		visible.hidden = true;
 	}
 	visible = div.children()[Math.floor(Math.random() * n)];
-	visible.show();
+	visible.hidden = false;
 };
 shuffle();
 $("#shuffle").click(shufle);
