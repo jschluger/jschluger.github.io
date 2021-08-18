@@ -89,12 +89,14 @@ body {
 }
 
 div#images {
-    align-content: center;
+    text-align: center;
 }
 
 .shuffle-image {
     border: 2px solid black;
     width: 75%;
+    margin: auto;
+    display: inline;
 }
 
 button#shuffle {
@@ -107,5 +109,6 @@ button#shuffle {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-
+    margin: auto;
+    display: inline;
 }
