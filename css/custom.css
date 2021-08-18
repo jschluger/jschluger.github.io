@@ -87,3 +87,9 @@ body {
     float: right;
     width: 55%;
 }
+
+.shuffle-image {
+    border: 2px solid black;
+    width: 75%;
+    align-content: center;
+}
