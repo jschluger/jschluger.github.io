@@ -1,32 +1,15 @@
-var div = $("div#photos");
+var div = $("div#images");
 console.log(div);
+var visible = null;
 
 var shuffle = function () {
 	console.log(div);
-
-
+	var n = div.children().length;
+	if (visible != null) {
+		visible.hide()
+	}
+	visible = div.children()[Math.floor(Math.random() * n)];
+	visible.show();
 };
+shuffle();
 $("#shuffle").click(shufle);
-
-
-
-
-var state = 1;
-var swap = function () {
-	console.log("state=", state);
-	if (state == 0) {
-		$("#academic-intro").hide();
-		$("#personal-intro").show();
-
-		state = 1;
-	}
-	else {
-		$("#academic-intro").show();
-		$("#personal-intro").hide();
-
-		state = 0;
-	}
-};
-
-swap();
-$("#rotate").click(swap);

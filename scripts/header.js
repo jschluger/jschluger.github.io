@@ -125,4 +125,3 @@ function rotate_colors_left() {
 
 $('#name-arrow-left').click(rotate_colors_left);
 $('#name-arrow-right').click(rotate_colors_right);
-B
