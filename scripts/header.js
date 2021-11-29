@@ -5,7 +5,7 @@ var RED = "#a05d68";
 var BLUE = "#282d44";
 var BLACK = "black";
 
-var NAME = "Jack Schluger";
+var NAME = "Charlotte Schluger";
 var COOKIE_NAME = "header";
 
 function decorate_name(name, colors) {
