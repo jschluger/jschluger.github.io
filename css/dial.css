@@ -1,0 +1,48 @@
+/* https://codepen.io/juliajungle/pen/edMxjm */
+
+.dial-circle {
+    display:inline-block;
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    background:linear-gradient(#F772A7, #F25C98);
+    border-radius:100%;
+    border:1px solid #D94882;
+    box-shadow:1px 1px 1px 1px rgba(255,255,255,0.3),
+                -1px -1px 1px rgba(255,255,255,0.7);
+    z-index:120;
+}
+
+#dial-ball {
+    content: " ";
+    position: absolute;
+    z-index: 5;
+    left: 50px;
+    top:14px;
+    background: radial-gradient(50% 50%, white 30%, grey 80%);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    
+    &:hover {
+    cursor: pointer;
+    }
+}
+
+.dial-inner {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#dial-value {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 24px;
+}
+

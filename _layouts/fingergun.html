@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Fingergun Cowgirl &#183; {{ page.title }}</title>
+    <link rel="stylesheet" href="css/custom.css">
+    {% if page.title=="Loops" %}
+    <link rel="stylesheet" href="css/dial.css">
+    {% endif %}
+</head>
+
+<body>
+    {{ content }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {% if page.title=="Loops" %}
+    <script src="scripts/dial.js"></script>
+    <script src="scripts/loops.js"></script>
+    {% endif %}
+
+</body>
+
+</html>
