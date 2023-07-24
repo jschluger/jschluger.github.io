@@ -37,6 +37,11 @@
     z-index: 1;
 }
 
+.loadImage {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .name-arrow {
     float: left;
