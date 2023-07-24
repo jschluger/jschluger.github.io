@@ -25,7 +25,7 @@ var choices = [PURPLE_1, PURPLE_1, PURPLE_2, RED_1, BLACK, BLACK];
 function pick_colors(name) {
     var colors = [];
     for (var i = 0; i < name.length - 1; i++) {
-	colors.push( choices[Math.floor(Math.random()* choices.length) ] );        }
+	colors.push( choices[Math.floor(Math.random()* choices.length) ] );
     }
     return colors;
 }
