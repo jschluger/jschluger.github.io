@@ -20,7 +20,7 @@ var PURPLE_1 = "#8a28b8";
 var PURPLE_2 = "#c71cbb";
 var RED_1 = "#c71c2a";
 var BLACK = "black";
-var choices = [PURPLE_1, PURPLE_1, PURPLE_2, RED_1, BLACK, BLACK];
+var choices = [PURPLE_1, PURPLE_1, PURPLE_1, PURPLE_2, RED_1, BLACK, BLACK, BLACK];
 
 function pick_colors(name) {
     var colors = [];
