@@ -20,18 +20,29 @@ var links = ["https://lh3.googleusercontent.com/pw/AIL4fc95b7e-Tcy-n60RFZ3ErgtiO
 	     "https://lh3.googleusercontent.com/pw/AIL4fc98nc-4mKTs8UCE4qfzwID8yXHkadttCLTV_tKoHwqIrxuFclcTTtNkesrw2m45A_z7Bgq1v3CypWDoD4ulzM3w4qB6H9iaFeliab-JE343_ZwG_GFCdcfZzrxavTFH63PxZ86hHwlqxuegxOnGejRo=w1102-h1378-s-no?authuser=0"
 	    ];
 
-var load_images = function() {
-    var i = 0;
-    for (img in document.images) {
-	var image = document.images[img];
-	if (image.className == 'loadImage') {
-	    var downloadingImage = new Image();
-	    downloadingImage.onload = function(){
-		image.src = this.src;   
-	    };
-	    downloadingImage.src = links[i];
-	    i++; 
-	};
-    };
+// Load Images
+var to_load_indexes = []
+for (j in document.images) {
+    var image = document.images[img];
+    if (image.className == 'loadImage') {
+	to_load_indexes.push(j);
+    }
+}
+
+
+var load0 = new Image();
+load0.onload = function(){
+    document.images[to_load_indexes[0]].src = this.src;   
 };
-load_images();
+var load1 = new Image();
+load1.onload = function(){
+    document.images[to_load_indexes[1]].src = this.src;   
+};
+var load2 = new Image();
+load2.onload = function(){
+    document.images[to_load_indexes[2]].src = this.src;   
+};
+load0.src = links[0];
+load1.src = links[1];
+load2.src = links[2];
+
