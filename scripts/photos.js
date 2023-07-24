@@ -23,7 +23,7 @@ var links = ["https://lh3.googleusercontent.com/pw/AIL4fc95b7e-Tcy-n60RFZ3ErgtiO
 // Load Images
 var to_load_indexes = []
 for (j in document.images) {
-    var image = document.images[img];
+    var image = document.images[j];
     if (image.className == 'loadImage') {
 	to_load_indexes.push(j);
     }
