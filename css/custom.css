@@ -92,6 +92,12 @@ a:focus {
     text-decoration: none;
 }
 
+#nav a:hover,
+#nav a:active,
+#nav a:focus {
+    color: var(--orange);
+}
+
 #nav h3 {
     text-align: right;
 }
