@@ -1,10 +1,3 @@
-var red_f = 1.5 / 12;
-var blue_f = 5 / 12;
-
-var RED = "#a05d68";
-var BLUE = "#282d44";
-var BLACK = "black";
-
 var NAME = "Charlotte Schluger";
 var COOKIE_NAME = "header";
 
@@ -22,21 +15,17 @@ function decorate_name(name, colors) {
     return out;
 }
 
+
+var PURPLE_1 = '#8a28b8';
+var PURPLE_2 = '#c71cbb'
+var RED_1 = '#c71c2a'
+var BLACK = "black";
+choices = [PURPLE_1, PURPLE_1, PURPLE_2, RED_1, BLACK, BLACK];
+
 function pick_colors(name) {
     var colors = [];
     for (var i = 0; i < name.length - 1; i++) {
-        if (Math.random() < red_f) {
-            colors.push(RED);
-        }
-        else {
-            var r = Math.random();
-            if (red_f < r && r < red_f + blue_f) {
-                colors.push(BLUE);
-            }
-            else {
-                colors.push(BLACK);
-            }
-        }
+	colors.push( choices[Math.floor(Math.random()* choices.length) ] );        }
     }
     return colors;
 }
