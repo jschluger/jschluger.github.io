@@ -22,6 +22,7 @@
 }
 
 #footer {
+    position: relative;
     float: right;
     text-align: right;
     color: var(--purple3);
