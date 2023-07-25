@@ -40,7 +40,7 @@
 /* Photography portfolio section */
 body #plain {
     background-color: black;
-    text-color: white;
+    color: white;
 }
 
 .nav-plain {
@@ -48,6 +48,12 @@ body #plain {
     margin: 5%;
     background: var(--contentback);
     padding: 0.5%;
+}
+
+#content-overlay {
+    width: 99%;
+    z-index: 2;
+
 }
 
 .imageSectionTitle {
