@@ -26,9 +26,10 @@
     float: right;
     text-align: right;
     color: var(--purple3);
+    font-size: 8px;
 }
 .footerBlock {
-    border: 2px var(--purple3);
+    border: 2px solid var(--purple3);
     float: right;
 }
 
