@@ -112,9 +112,13 @@ a:focus {
     color: var(--orange);
 }
 
-#nav a {
+.quiet {
     color: black;
     text-decoration: none;
+}
+
+a.quiet:visited {
+    color: var(--purple3);
 }
 
 #nav a:hover,
