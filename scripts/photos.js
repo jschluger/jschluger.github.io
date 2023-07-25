@@ -27,6 +27,8 @@ for (j in document.images) {
     }
 }
 
+console.log('to_load_indexes');
+console.log(to_load_indexes);
 
 var load0 = new Image();
 load0.onload = function(){
