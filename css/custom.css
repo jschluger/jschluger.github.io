@@ -5,8 +5,6 @@
     --purple2: #c71cbb;
     --purple3: #801778;
     --orange:  #de804e;
-			
-    
 }
 
 #content-overlay {
@@ -16,8 +14,7 @@
 
 }
 
-#content,
-#footer {
+#content {
     width: 100%;
     margin: 1%;
     padding: 1%;
@@ -26,6 +23,8 @@
 
 #footer {
     float: right;
+    border: 2px var(--purple3);
+    color: var(--purple3);
 }
 
 #nav {
@@ -43,15 +42,8 @@ body #plain {
     color: white;
 }
 
-.nav-plain {
-    float: right;
-    margin: 5%;
-    background: var(--contentback);
-    padding: 0.5%;
-}
-
 .imageSectionTitle {
-    
+    text-align: left;
 }
 
 /* .loadImage { */
@@ -61,9 +53,13 @@ body #plain {
 /* } */
 /* end */
 
+#background {
+    float: right;
+    width: 55%;
+}
 
 .loadImage {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
 }
 
@@ -136,12 +132,6 @@ body {
     background-color: var(--purple1);
     font-family: "Bookman Old Style";
 }
-
-#background {
-    float: right;
-    width: 55%;
-}
-
 
 
 div#images {
