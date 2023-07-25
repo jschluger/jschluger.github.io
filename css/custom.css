@@ -150,7 +150,7 @@ div#images {
 
 .shuffle-image {
     border: 2px solid black;
-    width: 75%;
+    width: 50%;
     margin: auto;
     display: none;
 }
