@@ -50,14 +50,14 @@ body #plain {
     padding: 0.5%;
 }
 
-#content-overlay {
-    width: 99%;
-    z-index: 2;
-
-}
-
 .imageSectionTitle {
     
+}
+
+.loadImage {
+    border: 2px black;
+    width: 75%;
+    padding: 2%
 }
 /* end */
 

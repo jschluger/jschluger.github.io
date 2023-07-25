@@ -14,6 +14,15 @@ shuffle();
 $("#shuffle").click(shuffle);
 
 
+$(window).scroll(function() {
+  var x = $(this).scrollTop();
+  $('#nav').css({
+    opacity: function() {
+     return 1- ((x/400)**2) 
+    }
+  });
+});
+
 
 var links = ["https://lh3.googleusercontent.com/pw/AIL4fc98nc-4mKTs8UCE4qfzwID8yXHkadttCLTV_tKoHwqIrxuFclcTTtNkesrw2m45A_z7Bgq1v3CypWDoD4ulzM3w4qB6H9iaFeliab-JE343_ZwG_GFCdcfZzrxavTFH63PxZ86hHwlqxuegxOnGejRo=w1102-h1378-s-no?authuser=0",
 	     "https://lh3.googleusercontent.com/pw/AIL4fc9HSwM2CSQGSnw620af1HFNAKZIhun3TRZVEiYFLpg8i8XuRWVIgyb6uW4sFjDfbkZQtKka8xx--C07Zo9qqVNGntyqDhrIA47eEs3LmoqfYrWlwRl1nW4AEL_KfDpFJVLAugaktLVN0nZhdnLxLx1s=w2066-h1378-s-no?authuser=0"
