@@ -113,9 +113,7 @@ a:focus {
     color: var(--orange);
 }
 
-#nav a:hover,
-#nav a:active,
-#nav a:focus {
+#nav a {
     text-decoration: none;
 }
 
