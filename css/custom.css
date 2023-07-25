@@ -115,6 +115,7 @@ a:focus {
 
 #nav a {
     text-decoration: none;
+    text-color: black;
 }
 
 .quiet {
