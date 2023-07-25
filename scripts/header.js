@@ -114,3 +114,13 @@ function rotate_colors_left() {
 
 $('#name-arrow-left').click(rotate_colors_left);
 $('#name-arrow-right').click(rotate_colors_right);
+
+
+$(window).scroll(function() {
+  var x = $(this).scrollTop();
+  $('#nav').css({
+    opacity: function() {
+     return 1- ((x/400)**2) 
+    }
+  });
+});
