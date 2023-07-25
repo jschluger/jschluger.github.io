@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Charlotte Schluger &#183; {{ page.title }}</title>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="plain">
+  <div id="nav-plain">
+    <h1 class="bigger" id="name">Charlotte Schluger</h1>
+    <h2 class="name-arrow" id="name-arrow-left">&#8592; </h2>
+    <h2 class="name-arrow" id="name-arrow-right"> &#8594;</h2>
+    <h3>
+      <a href="https://jschluger.github.io/" {% if page.title=="Home" %} class="thispage" {% endif %}>
+        Home</a>
+      &#183;
+      <a href="https://jschluger.github.io/science.html" {% if page.title=="Science" %} class="thispage" {%
+        endif %}>Science</a>
+      <!-- &#183; -->
+      <!-- <a href="https://jschluger.github.io/teaching.html" {% if page.title=="Teaching" %} class="thispage" {% endif %}>
+        Teaching</a>
+      &#183; -->
+      <!-- <a href="https://jschluger.github.io/personal.html" {% if page.title=="Personal" %} class="thispage" {% endif -->
+      <!--   %}>Personal</a> -->
+      &#183;
+      <a href="https://jschluger.github.io/photos.html" {% if page.title=="Photos" %} class="thispage" {% endif
+        %}>Photos</a>
+    </h3>
+  </div>
+  <div id="content-overlay-plain">
+    <div id="content-plain">
+      {{ content }}
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/header.js"></script>
+
+  <script src="scripts/photos.js"></script>
+  </body>
+
+</html>

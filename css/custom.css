@@ -37,6 +37,22 @@
     z-index: 1;
 }
 
+/* Photography portfolio section */
+body #plain {
+    background-color: black;
+    text-color: white;
+}
+
+#nav-plain {
+    float: right;
+    margin: 5%;
+    background: var(--contentback);
+    padding: 0.5%;
+    z-index: 1;
+}
+/* end */
+
+
 .loadImage {
     max-width: 100%;
     height: auto;
@@ -110,13 +126,14 @@ a:focus {
 body {
     background-color: var(--purple1);
     font-family: "Bookman Old Style";
-
 }
 
 #background {
     float: right;
     width: 55%;
 }
+
+
 
 div#images {
     text-align: center;
