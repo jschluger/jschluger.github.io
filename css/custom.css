@@ -23,8 +23,12 @@
 
 #footer {
     float: right;
-    border: 2px var(--purple3);
+    text-align: right;
     color: var(--purple3);
+}
+.footerBlock {
+    border: 2px var(--purple3);
+    float: right;
 }
 
 #nav {
