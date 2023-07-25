@@ -47,7 +47,7 @@ function getCookieValue(name) {
 
 
 function main() {
-    var MAX_C = 2;
+    var MAX_C = 12;
     console.log('unparsed cookie is');
     console.log(document.cookie);
     var val = getCookieValue(COOKIE_NAME);
