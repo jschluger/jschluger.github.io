@@ -1,1 +1,5 @@
-$('#footer').css({top: $('#background').height(), left: 5});
+$('#footer').css({top: $('#background').height(),
+		  left: $('#background').width()
+		  -
+		  $('#footer').width()
+		 });
