@@ -61,7 +61,7 @@ body #plain {
     text-align: left;
 }
 
-.photo-contents img{
+#photo-contents img{
     border: 2px solid white;
     margin: px;
     display: inline;
