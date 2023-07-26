@@ -2,25 +2,20 @@ $('body').css("background", "black");
 $('#content').css("background", "black");
 $('body').css("color", "white");
 
-var visible = null;
+// var visible = null;
 
-var shuffle = function () {
-	var n = $('img.shuffle-image').length;
-	if (visible != null) {
-		visible.style.display = 'none'
-	}
-	var next = visible;
-	while (next == visible) next = $('img.shuffle-image')[Math.floor(Math.random() * n)];
-	visible = next;
-	visible.style.display = 'inline';
-};
-shuffle();
-$("#shuffle").click(shuffle);
-
-
-var links = ["https://lh3.googleusercontent.com/pw/AIL4fc98nc-4mKTs8UCE4qfzwID8yXHkadttCLTV_tKoHwqIrxuFclcTTtNkesrw2m45A_z7Bgq1v3CypWDoD4ulzM3w4qB6H9iaFeliab-JE343_ZwG_GFCdcfZzrxavTFH63PxZ86hHwlqxuegxOnGejRo=w1102-h1378-s-no?authuser=0",
-	     "https://lh3.googleusercontent.com/pw/AIL4fc9HSwM2CSQGSnw620af1HFNAKZIhun3TRZVEiYFLpg8i8XuRWVIgyb6uW4sFjDfbkZQtKka8xx--C07Zo9qqVNGntyqDhrIA47eEs3LmoqfYrWlwRl1nW4AEL_KfDpFJVLAugaktLVN0nZhdnLxLx1s=w2066-h1378-s-no?authuser=0"
-	    ];
+// var shuffle = function () {
+// 	var n = $('img.shuffle-image').length;
+// 	if (visible != null) {
+// 		visible.style.display = 'none'
+// 	}
+// 	var next = visible;
+// 	while (next == visible) next = $('img.shuffle-image')[Math.floor(Math.random() * n)];
+// 	visible = next;
+// 	visible.style.display = 'inline';
+// };
+// shuffle();
+// $("#shuffle").click(shuffle);
 
 // Load Images
 var to_load_indexes = []
