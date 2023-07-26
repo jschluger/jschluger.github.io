@@ -43,7 +43,7 @@ load2.onload = function(){
     document.images[to_load_indexes[2]].src = this.src;   
 };
 
-// load0.src = document.images[to_load_indexes[0]].id; // links[0];
-// load1.src = document.images[to_load_indexes[1]].id; // links[1];
-// load2.src = document.images[to_load_indexes[2]].id; // links[2];
+load0.src = document.images[to_load_indexes[0]].id
+load1.src = document.images[to_load_indexes[1]].id
+load2.src = document.images[to_load_indexes[2]].id
 
