@@ -23,19 +23,13 @@
     <h2 class="name-arrow" id="name-arrow-left">&#8592; </h2>
     <h2 class="name-arrow" id="name-arrow-right"> &#8594;</h2>
     <h3>
-      <a href="https://jschluger.github.io/" {% if page.title=="Home" %} class="thispage" {% endif %}>
+      <a href="https://jschluger.github.io/" {% if page.title=="home" %} class="thispage" {% endif %}>
         Home</a>
       &#183;
-      <a href="https://jschluger.github.io/science.html" {% if page.title=="Science" %} class="thispage" {%
+      <a href="https://jschluger.github.io/science.html" {% if page.title=="science" %} class="thispage" {%
         endif %}>Science</a>
-      <!-- &#183; -->
-      <!-- <a href="https://jschluger.github.io/teaching.html" {% if page.title=="Teaching" %} class="thispage" {% endif %}>
-        Teaching</a>
-      &#183; -->
-      <!-- <a href="https://jschluger.github.io/personal.html" {% if page.title=="Personal" %} class="thispage" {% endif -->
-      <!--   %}>Personal</a> -->
       &#183;
-      <a href="https://jschluger.github.io/photos.html" {% if page.title=="Photos" %} class="thispage" {% endif
+      <a href="https://jschluger.github.io/photos.html" {% if page.title=="photos" %} class="thispage" {% endif
         %}>Photos</a>
     </h3>
   </div>
@@ -51,7 +45,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="scripts/style.js"></script>
   <script src="scripts/header.js"></script>
-  {% if page.title=="Photos" %}
+  {% if page.title=="photos" %}
   <script src="scripts/photos.js"></script>
   {% endif %}
 
