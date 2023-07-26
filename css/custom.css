@@ -10,9 +10,9 @@
 #content-overlay {
     position: relative;
     top: 400px;
+    margin:auto;
     width: 90%;
     z-index: 2;
-
 }
 
 #content {
