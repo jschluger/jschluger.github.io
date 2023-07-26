@@ -7,6 +7,14 @@
 </head>
 
 <body>
+  <h1 style="text-align:left; margin-left:5%; margin-top:5%;" id="pwd"> 
+    &#9733;
+    <i>charlotte</i>
+    {% if page.title!="Home" %}
+    <br>
+    <i style="padding-left: 5%">&gt; {{ page.title }}</i>
+    {%endif %}
+  </h1>
   <img src="assets/ArcaneBullshit_ManySkulls1.svg/ArcaneBullshit_ManySkulls1.svg" alt="skulls" id="background">
 
   <!-- <img src="assets/fall1.jpg" alt="me" id="background"> -->
