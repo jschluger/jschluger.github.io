@@ -43,6 +43,13 @@
     z-index: 2;
 }
 
+#pwd {
+    text-align:left;
+    margin-left:7.5%;
+    margin-top:7.5%;
+    position:absolute;
+}
+
 /* Photography portfolio section */
 body #plain {
     background-color: black;
