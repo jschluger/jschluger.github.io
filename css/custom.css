@@ -62,7 +62,7 @@ body #plain {
 }
 
 #photo-contents img{
-    border: 2px solid white;
+    border: 8px solid white;
     margin: px;
     display: inline;
 }
