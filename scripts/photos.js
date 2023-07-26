@@ -38,12 +38,12 @@ var load1 = new Image();
 load1.onload = function(){
     document.images[to_load_indexes[1]].src = this.src;   
 };
-// var load2 = new Image();
-// load2.onload = function(){
-//     document.images[to_load_indexes[2]].src = this.src;   
-// };
+var load2 = new Image();
+load2.onload = function(){
+    document.images[to_load_indexes[2]].src = this.src;   
+};
 
-load0.src = links[0];
-load1.src = links[1];
-// load2.src = links[2];
+// load0.src = document.images[to_load_indexes[0]].id; // links[0];
+// load1.src = document.images[to_load_indexes[1]].id; // links[1];
+// load2.src = document.images[to_load_indexes[2]].id; // links[2];
 
