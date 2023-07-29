@@ -133,10 +133,6 @@ a:focus {
     text-decoration: none;
 }
 
-a.quiet:visited {
-    color: var(--purple3);
-}
-
 #nav a:hover,
 #nav a:active,
 #nav a:focus {
