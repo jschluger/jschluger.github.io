@@ -47,7 +47,7 @@ function getCookieValue(name) {
 
 
 function main() {
-    var MAX_C = 12;
+    var MAX_C = 20000000000000000000;
     console.log('unparsed cookie is');
     console.log(document.cookie);
     var val = getCookieValue(COOKIE_NAME);
@@ -130,8 +130,9 @@ function refresh_colors() {
 	data.colors.pop();
 	$('#name').html(decorate_name(NAME, data.colors));
 	console.log(i);
-	wait(100);
+	// wait(100);
     }
+    data.c = 0;
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
 }
 
