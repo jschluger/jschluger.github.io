@@ -136,6 +136,7 @@ function refresh_colors() {
     }, 250)
     
     data.c = 0;
+    data.colors = new_colors;
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
 }
 
