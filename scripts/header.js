@@ -112,9 +112,32 @@ function rotate_colors_left() {
     $('#name').html(decorate_name(NAME, data.colors));
 }
 
+var wait = (ms) => {
+    const start = Date.now();
+    let now = start;
+    while (now - start < ms) {
+      now = Date.now();
+    }
+}
+
+function refresh_colors() {
+    var val = getCookieValue(COOKIE_NAME);
+    var data = JSON.parse(val);
+    var new_colors = pick_colors(NAME);
+
+    for (i in new_colors) {
+	data.colors.unshift(new_colors[i]);
+	data.colors.pop();
+	$('#name').html(decorate_name(NAME, data.colors));
+	console.log(i);
+	wait(100);
+    }
+    document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
+}
+
 $('#name-arrow-left').click(rotate_colors_left);
 $('#name-arrow-right').click(rotate_colors_right);
-
+$('#name-arrow-refresh').click(refresh_colors);
 
 $(window).scroll(function() {
   var x = $(this).scrollTop();
