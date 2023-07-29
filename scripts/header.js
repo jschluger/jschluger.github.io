@@ -127,12 +127,12 @@ function refresh_colors() {
 
     var i = 0;
     var interval = setInterval(function() {
-	if(i >= new_colors.length)
-            clearInterval(interval);
 	data.colors.unshift(new_colors[i]);
 	data.colors.pop();
 	$('#name').html(decorate_name(NAME, data.colors));
 	i += 1;
+	if (i >= new_colors.length)
+            clearInterval(interval);
     }, 250)
     
     data.c = 0;
