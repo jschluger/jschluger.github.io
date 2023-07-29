@@ -125,13 +125,16 @@ function refresh_colors() {
     var data = JSON.parse(val);
     var new_colors = pick_colors(NAME);
 
-    for (i in new_colors) {
+    var i = 0;
+    var interval = setInterval(function() {
+	if(i >= new_colors.length)
+            clearInterval(interval);
 	data.colors.unshift(new_colors[i]);
 	data.colors.pop();
 	$('#name').html(decorate_name(NAME, data.colors));
-	console.log(i);
-	// wait(100);
-    }
+	i += 1;
+    }, 250)
+    
     data.c = 0;
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
 }
