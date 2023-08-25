@@ -66,6 +66,9 @@ body #plain {
     margin: px;
     display: inline;
 }
+.imageSectionTitle {
+    text-align: left;
+}
 /* end */
 
 #background {
