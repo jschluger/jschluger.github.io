@@ -129,15 +129,20 @@ a:focus {
     text-color: black;
 }
 
-.quiet {
-    text-decoration: none;
-}
 
 #nav a:hover,
 #nav a:active,
 #nav a:focus {
     color: var(--orange);
 }
+
+.quiet,
+.quiet a:hover,
+.quiet a:active,
+.quiet a:focus{
+    text-decoration: none;
+}
+
 
 #nav h3 {
     text-align: right;
