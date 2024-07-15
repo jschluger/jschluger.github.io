@@ -7,16 +7,18 @@
 </head>
 
 <body>
-  <a href="https://charlotte-schluger.com/" class='quiet'>
   <h1 id="pwd"> 
     &#9733;
-    <i>charlotte</i>
+    <a href="https://charlotte-schluger.com/" class='quiet'>
+      <i>charlotte</i>
+    </a>
     {% if page.title!="home" %}
     <br>
-    <i style="padding-left: 5%">&gt; {{ page.title }}</i>
+    <a href="" class='quiet'>
+      <i style="padding-left: 5%">&gt; {{ page.title }}</i>
+    </a>
     {%endif %}
   </h1>
-  </a>
   <img src="assets/ArcaneBullshit_ManySkulls1.svg/ArcaneBullshit_ManySkulls1.svg" alt="skulls" id="background">
 
   <!-- <img src="assets/fall1.jpg" alt="me" id="background"> -->
