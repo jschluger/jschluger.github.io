@@ -4,6 +4,12 @@ const MS_PER_FRAME=33.33333;
 const START_SPEED=50;
 const spinThresh=0.01;
 
+let keep_going=false;
+let destroy_mode=true;
+let super_destroy_mode=false;
+let gravity=false;
+
+
 let basic_objects_jq = $('body').children()
 let basic_objects = {};
 basic_objects_jq.each(function() {
@@ -97,10 +103,6 @@ function default_next_speed(speed,acceleration) {
     return speed
 }
 
-let keep_going=false;
-let destroy_mode=false;
-let super_destroy_mode=false;
-let gravity=false;
 function animate() {
     let all_stopped=true;
     for (i in objects) {
