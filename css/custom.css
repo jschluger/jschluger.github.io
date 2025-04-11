@@ -9,10 +9,10 @@
 
 #content-overlay {
     position: relative;
-    top: 300px;
+    top: 50px;
     margin:auto;
     width: 95%;
-    z-index: 1;
+    z-index: 30;
 }
 
 #content {
@@ -73,7 +73,8 @@ body #plain {
 /* end */
 
 #background {
-    position: absolute;
+    position: fixed;
+    z-index: -1;
     right: 0;
     width: 55%;
 }
