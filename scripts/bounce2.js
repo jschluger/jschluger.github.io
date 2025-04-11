@@ -209,7 +209,7 @@ function animate() {
 	setTimeout(animate, MS_PER_FRAME)}
     else {
 	keep_going = false
-	$('#bouncer').css('display','none')
+	//$('#bouncer').css('display','none')
     }
 }
 
