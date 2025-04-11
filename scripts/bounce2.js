@@ -278,8 +278,6 @@ function color_background(){
     let b=150 + ( (x-200)**2/412.4) ;
     $('body').css('background', "rgb("+r+", "+g+", "+b+")");
 }
-$(window).on("scroll", color_background);
-
 
 $('#virus').click(function() {
     if (!keep_going) {
