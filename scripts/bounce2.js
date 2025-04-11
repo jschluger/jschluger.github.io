@@ -281,25 +281,21 @@ $(window).on("scroll", color_background);
 
 $('#virus').click(function() {
     if (!keep_going) {
-	$('#stopBouncing').css('background','none');
-	$(this).css('background','gold');
-
 	start_bouncing('bouncer');
     }
-})
-$('#stopBouncing').click(function() {
-    if (keep_going) {
-	$('#startBouncing').css('background','none');
-	$(this).css('background','lightslategrey');
-
+    else {	
 	for (i in objects) {
 	    o = objects[i]
 	    o.stopping=true;
 	    o.next_speed = function(speed,acc){return Math.max(0,speed*(Math.max(0.5,0.97-(speed/350))))}
-
 	}
     }
 })
+
+
+// None of the rest of these do anything because none of these ids are defined on this site.
+// leaving for refrence
+//
 $('#destroy_mode').click(function() {
     if (keep_going || destroy_mode) {
 	destroy_mode = !destroy_mode
