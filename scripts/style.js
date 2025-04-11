@@ -4,4 +4,4 @@ $('#footer').css({top: $('#background').height(),
 		  $('#footer').width()
 		 });
 
-$('img').css('z-index','65')
+$('.8131').css('z-index','65')
