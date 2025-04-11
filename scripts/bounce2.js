@@ -5,7 +5,7 @@ const START_SPEED=50;
 const spinThresh=0.01;
 
 let keep_going=false;
-let destroy_mode=true;
+let destroy_mode=false;
 let super_destroy_mode=false;
 let gravity=false;
 
@@ -279,16 +279,20 @@ function color_background(){
     $('body').css('background', "rgb("+r+", "+g+", "+b+")");
 }
 
-$('#virus').click(function() {
+$('#bouncer').click(function() {
     if (!keep_going) {
 	start_bouncing('bouncer');
+	$('#stopBouncing').show()
     }
-    else {	
+})
+$('#stopBouncing').click(function() {
+    if (keep_going) {
 	for (i in objects) {
 	    o = objects[i]
 	    o.stopping=true;
 	    o.next_speed = function(speed,acc){return Math.max(0,speed*(Math.max(0.5,0.97-(speed/350))))}
 	}
+	$('#stopBouncing').hide()
     }
 })
 
