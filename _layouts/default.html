@@ -15,8 +15,14 @@
     </a>
     {% if page.title!="home" %}
     <br>
-    <a href="" class='quiet'>
+    <a href="/{{ page.title }}" class='quiet'>
       <i style="padding-left: 5%">&gt; {{ page.title }}</i>
+    </a>
+    {%endif %}
+    {% if page.subtitle %}
+    <br>
+    <a href="" class='quiet'>
+      <i style="padding-left: 10%">&gt; {{ page.subtitle }}</i>
     </a>
     {%endif %}
   </h1>
