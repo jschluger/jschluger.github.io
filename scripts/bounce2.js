@@ -209,7 +209,10 @@ function animate() {
 	setTimeout(animate, MS_PER_FRAME)}
     else {
 	keep_going = false
-	//$('#bouncer').css('display','none')
+	
+	$('#stopBouncing').hide()
+	$('#speed_up').hide()
+	$('#slow_dow').hide()
     }
 }
 
@@ -286,6 +289,8 @@ $('#bouncer').click(function() {
     if (!keep_going) {
 	start_bouncing('bouncer');
 	$('#stopBouncing').show()
+	$('#speed_up').show()
+	$('#slow_dow').show()
     }
 })
 $('#stopBouncing').click(function() {
@@ -295,14 +300,45 @@ $('#stopBouncing').click(function() {
 	    o.stopping=true;
 	    o.next_speed = function(speed,acc){return Math.max(0,speed*(Math.max(0.5,0.97-(speed/350))))}
 	}
-	$('#stopBouncing').hide()
+    }
+})
+let temp_acc = {}
+$('#speed_up').click(function() {
+    temp_acc['start']=objects['bouncer'].speed
+    objects['bouncer'].angle += randomTurn(Math.PI/3.5)
+    objects['bouncer'].next_speed  = function(speed, acc) {return speed*1.5}
+    setTimeout(function() {
+	objects['bouncer'].next_speed = function(speed, acc) {
+	    if (objects['bouncer'].speed < temp_acc['start']*1.2)
+		objects['bouncer'].next_speed  = function(speed, acc) {return speed+0.01}
+	    
+	    return speed*.9}
+    }, 333)
+})
+$('#speed_up').mousedown(function(){$(this).css('background','darkseagreen')})
+$('#speed_up').mouseup(function(){$(this).css('background','none')})
+
+$('#slow_down').click(function() {
+    objects['bouncer'].angle += Math.PI;
+    objects['bouncer'].angle += randomTurn(Math.PI*.75);
+    for (i in objects) {
+	o = objects[i];
+	if (o.speed > 5) {
+	    temp_acc['start']=objects['bouncer'].speed
+	    objects['bouncer'].next_speed  = function(speed, acc) {return speed*.9}
+	    setTimeout(function() {
+		objects['bouncer'].next_speed  = function(speed, acc) {return speed+0.01}
+	    }, 500)
+	    o.spinSpeed = objects[i].spinSpeed * 0.5;
+	}
     }
 })
 
+$('#slow_down').mousedown(function(){$(this).css('background','lightcoral')})
+$('#slow_down').mouseup(function(){$(this).css('background','none')})
 
-// None of the rest of these do anything because none of these ids are defined on this site.
-// leaving for refrence
-//
+
+
 $('#destroy_mode').click(function() {
     if (keep_going || destroy_mode) {
 	destroy_mode = !destroy_mode
@@ -316,6 +352,11 @@ $('#destroy_mode').click(function() {
 	}, 5000);
     }
 });
+
+// None of the rest of these do anything because none of these ids are defined on this site.
+// leaving for refrence
+//
+
 $('#gravity').click(function() {
     if (destroy_mode || gravity) {
 	gravity=!gravity
@@ -364,40 +405,3 @@ $('#SUPER_destroy_mode').click(function() {
 	}, 5000);
     }
 });
-
-
-let temp_acc = {}
-$('#speedUp').click(function() {
-    temp_acc['start']=objects['bouncer'].speed
-    objects['bouncer'].angle += randomTurn(Math.PI/3.5)
-    objects['bouncer'].next_speed  = function(speed, acc) {return speed*1.5}
-    setTimeout(function() {
-	objects['bouncer'].next_speed = function(speed, acc) {
-	    if (objects['bouncer'].speed < temp_acc['start']*1.2)
-		objects['bouncer'].next_speed  = function(speed, acc) {return speed+0.01}
-	    
-	    return speed*.9}
-    }, 333)
-})
-$('#speedUp').mousedown(function(){$(this).css('background','darkseagreen')})
-$('#speedUp').mouseup(function(){$(this).css('background','none')})
-
-$('#slowDown').click(function() {
-    objects['bouncer'].angle += Math.PI;
-    objects['bouncer'].angle += randomTurn(Math.PI*.75);
-    for (i in objects) {
-	o = objects[i];
-	if (o.speed > 5) {
-	    temp_acc['start']=objects['bouncer'].speed
-	    objects['bouncer'].next_speed  = function(speed, acc) {return speed*.9}
-	    setTimeout(function() {
-		objects['bouncer'].next_speed  = function(speed, acc) {return speed+0.01}
-	    }, 500)
-	    o.spinSpeed = objects[i].spinSpeed * 0.5;
-	}
-    }
-})
-
-$('#slowDown').mousedown(function(){$(this).css('background','lightcoral')})
-$('#slowDown').mouseup(function(){$(this).css('background','none')})
-
