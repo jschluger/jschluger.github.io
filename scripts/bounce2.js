@@ -94,7 +94,7 @@ function crawl(collect,i=0,calls=1){
     })
     return 0;
 }
-let exclude_ids=[]; //['stopBouncing','destroy_mode','SUPER_destroy_mode'];
+let exclude_ids=['stopBouncing']; //[,'destroy_mode','SUPER_destroy_mode'];
 function detatch(o) {
     if (!exclude_ids.includes(o.b.id)) {
 	o.b.insertBefore($('#index'));
