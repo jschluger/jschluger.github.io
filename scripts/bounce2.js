@@ -113,6 +113,7 @@ function animate() {
     let all_stopped=true;
     for (i in objects) {
 	if (exclude_ids.includes(i)) continue;
+	if (!destroy_mode && i!='bouncer') continue;
 	o = objects[i]
 
 	// Check for hitting the walls to reflect direction and spin object
