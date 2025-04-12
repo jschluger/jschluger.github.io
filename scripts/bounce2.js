@@ -211,9 +211,6 @@ function animate() {
 	keep_going = false
 	
 	$('#stopBouncing').hide()
-	$('#destroy_mode').hide()
-	$('#speed_up').hide()
-	$('#slow_dow').hide()
     }
 }
 
@@ -290,9 +287,6 @@ $('#bouncer').click(function() {
     if (!keep_going) {
 	start_bouncing('bouncer');
 	$('#stopBouncing').show()
-	$('#destroy_mode').show()
-	$('#speed_up').show()
-	$('#slow_down').show()
     }
 })
 $('#stopBouncing').click(function() {
