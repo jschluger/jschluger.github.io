@@ -5,3 +5,7 @@ $('#footer').css({top: $('#background').height(),
 		 });
 
 $('.8131').css('z-index','65')
+
+$('#81333').click("https://cyber.dabamos.de/88x31","_blank")
+$('#mayaant').click("https://mayacmatunis.com/","_blank")
+$('#log3y').click("https://log3y.neocities.org/","_blank")
