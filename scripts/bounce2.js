@@ -34,8 +34,10 @@ basic_objects_jq.each(function() {
     }
 })
 $('.8131').each(function(){
-    basic_objects[this.id].speed=START_SPEED/7;
-    basic_objects[this.id].angle = Math.random() * 2 * Math.PI;
+    if ( basic_objects[this.id] ) {
+	basic_objects[this.id].speed=START_SPEED/7;
+	basic_objects[this.id].angle = Math.random() * 2 * Math.PI;
+    }
 })
 let objects = basic_objects;
 
