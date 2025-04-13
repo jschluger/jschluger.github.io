@@ -1,14 +1,10 @@
 $('#a1').css('color','red')
 
 
-function change_colors(obj){
-    obj.css('color',colors[Math.round(Math.random()*colors.length)])
-    obj.children().each(() => change_colors($(this)))
-}
 
-$('#star').click(function() {
-    change_colors($('body'))
-})
+let i = setInterval( () =>
+		     $('#star').css('background',colors[Math.round(Math.random()*colors.length)]),
+		     1000)
 
 
 let colors=['aliceblue',
