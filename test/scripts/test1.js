@@ -2,10 +2,13 @@ $('#a1').css('color','red')
 
 
 function crawl(obj){
-    obj.css('color','red')
+    obj.css('color',colors[Math.round(Math.random()*colors.length)])
     obj.children().each(() => crawl($(this)))
 }
-crawl($('body'))
+
+$('#star').click(function() {
+    crawl($('body'))
+})
 
 
 let colors=['aliceblue',
