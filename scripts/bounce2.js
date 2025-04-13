@@ -218,9 +218,9 @@ function animate() {
 	keep_going = false
 	
 	$('#stopBouncing').hide()
-	$('#destroy_mode').css('cursor','none')
-	$('#speed_up').css('cursor','none')
-	$('#slow_down').css('cursor','none')
+	$('#destroy_mode').css('cursor','not-allowed')
+	$('#speed_up').css('cursor','not-allowed')
+	$('#slow_down').css('cursor','not-allowed')
     }
 }
 
