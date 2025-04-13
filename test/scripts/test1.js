@@ -1,13 +1,13 @@
 $('#a1').css('color','red')
 
 
-function crawl(obj){
+function change_colors(obj){
     obj.css('color',colors[Math.round(Math.random()*colors.length)])
-    obj.children().each(() => crawl($(this)))
+    obj.children().each(() => change_colors($(this)))
 }
 
 $('#star').click(function() {
-    crawl($('body'))
+    change_colors($('body'))
 })
 
 
