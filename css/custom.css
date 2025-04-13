@@ -7,9 +7,32 @@
     --orange:  #de804e;
 }
 
+#pwd {
+    text-align:left;
+    margin-left:3%;
+    margin-top:3%;
+    width:50%;
+    z-index: 64;
+
+    position: relative;
+    float:left;
+}
+
+#nav {
+    position: relative;
+    float:right;
+
+    right: 3%;
+    background: var(--contentback);
+    padding: 0.5%;
+    z-index: 2;
+}
+
+
 #content-overlay {
     position: relative;
-    top: 50px;
+    float:left;
+
     margin:auto;
     width: 95%;
     z-index: 30;
@@ -35,23 +58,6 @@
     float: right;
 }
 
-#nav {
-    position: fixed;
-    right: 3%;
-    top: 5%;
-    background: var(--contentback);
-    padding: 0.5%;
-    z-index: 2;
-}
-
-#pwd {
-    text-align:left;
-    margin-left:3%;
-    margin-top:3%;
-    width:100%;
-    position: relative;
-    z-index: 64;
-}
 
 /* Photography portfolio section */
 body #plain {
