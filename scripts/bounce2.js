@@ -218,6 +218,9 @@ function animate() {
 	keep_going = false
 	
 	$('#stopBouncing').hide()
+	$('#destroy_mode').css('cursor','none')
+	$('#speed_up').css('cursor','none')
+	$('#slow_down').css('cursor','none')
     }
 }
 
@@ -267,6 +270,10 @@ function start_bouncing(by_id) {
 	objects[by_id].next_speed = function(speed,acc) {return speed+0.01};
 	objects[by_id].speed=START_SPEED;
 	objects[by_id].angle = Math.random() * 2 * Math.PI;
+	$('#destroy_mode').css('cursor','pointer')
+	$('#speed_up').css('cursor','pointer')
+	$('#slow_down').css('cursor','pointer')
+	
 	animate();
     }
 }

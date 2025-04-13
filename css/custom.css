@@ -7,13 +7,6 @@
     --orange:  #de804e;
 }
 
-.8131 {
-    position:fixed;
-    height: 31px;
-    width: 88px;
-    cursor: pointer;
-}
-
 #content-overlay {
     position: relative;
     top: 50px;
