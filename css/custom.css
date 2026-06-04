@@ -11,6 +11,9 @@
     list-style-type: none;
 }
 
+.icon {
+    height: 25px;
+}
 
 #pwd {
     text-align:left;
