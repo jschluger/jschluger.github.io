@@ -7,6 +7,11 @@
     --orange:  #de804e;
 }
 
+#imreading {
+    list-style-type: none;
+}
+
+
 #pwd {
     text-align:left;
     margin-left:3%;
