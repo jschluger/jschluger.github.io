@@ -86,7 +86,6 @@ function main() {
     console.log(data);
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
 }
-
 main();
 
 function rot_right(lst) {
@@ -98,7 +97,7 @@ function rot_left(lst) {
 
 function rotate_colors_right() {
     var val = getCookieValue(COOKIE_NAME);
-    var data = JSON.parse(val);
+    var data = parse(val);
     rot_right(data.colors);
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
     $('#name').html(decorate_name(NAME, data.colors));
@@ -106,7 +105,7 @@ function rotate_colors_right() {
 
 function rotate_colors_left() {
     var val = getCookieValue(COOKIE_NAME);
-    var data = JSON.parse(val);
+    var data = parse(val);
     rot_left(data.colors);
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
     $('#name').html(decorate_name(NAME, data.colors));
@@ -120,9 +119,24 @@ var wait = (ms) => {
     }
 }
 
+function parse() {
+    var data;
+    try {
+	data = JSON.parse(val);
+    } catch (error) {
+	console.log(error);
+	data = {};
+	data.c = 0;
+        data.colors = pick_colors(NAME);
+	$('#name').html(decorate_name(NAME, data.colors));
+    }
+    console.log(data);
+    return data;
+}
+
 function refresh_colors() {
     var val = getCookieValue(COOKIE_NAME);
-    var data = JSON.parse(val);
+    var data = parse(val);
     var new_colors = pick_colors(NAME);
 
     var i = 0;
