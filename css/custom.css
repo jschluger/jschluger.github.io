@@ -161,7 +161,7 @@ a:focus {
 }
 
 a:hover.quiet {
-    color: var(--purple1);
+    color: var(--purple2);
 }
 
 
