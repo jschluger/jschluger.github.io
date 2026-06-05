@@ -113,10 +113,6 @@ body #plain {
     color: black;
 }
 
-.name-arrow:hover {
-    color: var(--orange);
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -164,7 +160,7 @@ a:focus {
     color: black;
 }
 
-a:visited.hover {
+a:hover.quiet {
     color: var(--orange);
 }
 
