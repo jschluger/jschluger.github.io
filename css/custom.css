@@ -167,11 +167,7 @@ a:focus {
 
 
 
-.quiet,
-.quiet a:visited,
-.quiet a:active,
-.quiet a:focus
-{
+.quiet, a:visited.quiet {
     text-decoration: none;
     color: black;
 }
