@@ -27,7 +27,8 @@
     margin-left:3%;
     margin-top:3%;
     z-index: 64;
-
+    width: 50%;
+    font-size: 21px;	   
     position: relative;
     float:left;
 }
