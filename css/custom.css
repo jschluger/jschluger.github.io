@@ -159,17 +159,13 @@ a:focus {
 }
 
 
-#nav a:hover,
-#nav a:active,
-#nav a:focus {
-    color: var(--orange);
-}
-
-
-
 .quiet, a:visited.quiet {
     text-decoration: none;
     color: black;
+}
+
+a:visited.hover {
+    color: var(--orange);
 }
 
 
