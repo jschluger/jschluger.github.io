@@ -86,7 +86,7 @@ function main() {
     console.log(data);
     document.cookie = COOKIE_NAME + "=" + JSON.stringify(data)
 }
-main();
+// main();
 
 function rot_right(lst) {
     lst.unshift(lst.pop());
