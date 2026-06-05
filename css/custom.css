@@ -11,10 +11,16 @@
     list-style-type: none;
 }
 
-.icon {
+.readingicon {
     height: 25px;
     padding: 3px;
 }
+
+.listening {
+    height: 50px;
+    padding: 6px;
+}
+
 
 #pwd {
     text-align:left;
