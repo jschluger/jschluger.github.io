@@ -165,10 +165,13 @@ a:focus {
     color: var(--orange);
 }
 
+
+
 .quiet,
-.quiet a:hover,
+.quiet a:visited,
 .quiet a:active,
-.quiet a:focus{
+.quiet a:focus
+{
     text-decoration: none;
     color: black;
 }
