@@ -110,6 +110,7 @@ body #plain {
 
 .name-arrow {
     float: left;
+    color: black;
 }
 
 .name-arrow:hover {
