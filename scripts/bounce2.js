@@ -222,7 +222,7 @@ function animate() {
 	$('#speed_up').css('cursor','not-allowed')
 	$('#slow_down').css('cursor','not-allowed')
 	$('#81333').css('cursor','not-allowed')
-	
+	$('#mylesant').css('cursor','not-allowed')
     }
 }
 
@@ -276,7 +276,7 @@ function start_bouncing(by_id) {
 	$('#speed_up').css('cursor','pointer')
 	$('#slow_down').css('cursor','pointer')
 	$('#81333').css('cursor','pointer')
-	
+	$('#mylesant').css('cursor','pointer')
 	animate();
     }
 }
