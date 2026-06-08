@@ -221,6 +221,8 @@ function animate() {
 	$('#destroy_mode').css('cursor','not-allowed')
 	$('#speed_up').css('cursor','not-allowed')
 	$('#slow_down').css('cursor','not-allowed')
+	$('#81333').css('cursor','not-allowed')
+	
     }
 }
 
@@ -273,6 +275,7 @@ function start_bouncing(by_id) {
 	$('#destroy_mode').css('cursor','pointer')
 	$('#speed_up').css('cursor','pointer')
 	$('#slow_down').css('cursor','pointer')
+	$('#81333').css('cursor','pointer')
 	
 	animate();
     }
