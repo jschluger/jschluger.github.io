@@ -420,3 +420,14 @@ $('#SUPER_destroy_mode').click(function() {
 	}, 5000);
     }
 });
+
+$('#81333').click( () =>
+    if (keep_going) {
+	window.open("https://cyber.dabamos.de/88x31","_blank")
+    }
+)
+$('#mylesant').click( () =>
+    if (keep_going) {
+	window.open("https://mayacmatunis.com/","_blank")
+    }
+)
