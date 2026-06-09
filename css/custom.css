@@ -46,12 +46,13 @@
 
 #content-overlay {
     position: relative;
-    float:left;
-
-    margin:auto;
+    margin:1%;
+    padding: 5px;
     width: 95%;
     z-index: 30;
     margin-bottom: 150px;
+    background: var(--contentback);
+    
 }
 
 #content {
