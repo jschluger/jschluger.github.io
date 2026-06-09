@@ -53,8 +53,8 @@
     z-index: 30;
     margin-bottom: 150px;
     padding: 1%;
+    padding-top:0px;
     background: var(--contentback);
-    
 }
 
 #footer {
