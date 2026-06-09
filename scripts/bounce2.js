@@ -101,7 +101,7 @@ function detatch(o) {
 	o.b.css('position','fixed')
 	o.b.css('top',o.y);
 	o.b.css('left',o.x);
-	o.b.css('width',Math.min( window.innerWidth / 2, o.b.width()));
+	o.b.css('width',Math.min( window.innerWidth / 10, o.b.width()));
     }
 }
 
