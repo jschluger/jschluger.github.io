@@ -421,13 +421,14 @@ $('#SUPER_destroy_mode').click(function() {
     }
 });
 
-$('#81333').click( () =>
+$('#81333').click( function() {
     if (keep_going) {
 	window.open("https://cyber.dabamos.de/88x31","_blank")
     }
-)
-$('#mylesant').click( () =>
+});
+
+$('#mylesant').click( function() {
     if (keep_going) {
 	window.open("https://mayacmatunis.com/","_blank")
     }
-)
+});
