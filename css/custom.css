@@ -36,7 +36,6 @@
 #nav {
     position: relative;
     float:right;
-
     right: 2.5%;
     background: var(--contentback);
     padding: 0.5%;
@@ -51,7 +50,7 @@
     width: 95%;
     z-index: 30;
     margin-bottom: 150px;
-    padding: 5px;
+    padding: 1%;
     background: var(--contentback);
     
 }
