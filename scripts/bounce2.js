@@ -264,6 +264,7 @@ function inside(point, vs) {
 function start_bouncing(by_id) {
     if (!keep_going) {
 	console.log("comence bouncing");
+	$('.8131').css('z-index','10')
 	$('#'+by_id).show()
 	//$('#'+by_id).css('top','20px')
 	//$('#'+by_id).css('left','20px')
