@@ -12,6 +12,9 @@ let gravity=false;
 
 let basic_objects_jq = $('body').children()
 let basic_objects = {};
+
+$('.8131').css('z-index','0')
+
 basic_objects_jq.each(function() {
     basic_objects[this.id] = {
 	id: this.id,
@@ -224,6 +227,8 @@ function animate() {
 	$('#81333').css('cursor','not-allowed')
 	$('#mylesant').css('cursor','not-allowed')
 	$('#bouncer').css('cursor','pointer')
+
+	$('.8131').css('z-index','0')
     }
 }
 
