@@ -31,6 +31,7 @@
     font-size: 21px;	   
     position: relative;
     float:left;
+    background: var(--purple1);
 }
 
 #nav {
