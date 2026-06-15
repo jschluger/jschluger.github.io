@@ -16,27 +16,6 @@
 </head>
 
 <body>
-  <h1 id="pwd"> 
-    &#9733;
-    <a href="https://charlotte-schluger.com/" class='quiet'>
-      <i>charlotte</i>
-    </a>
-    {% if page.title!="home" %}
-    <br>
-    <a href="/{{ page.title }}" class='quiet'>
-      <i style="padding-left: 5%">&gt; {{ page.title }}</i>
-    </a>
-    {%endif %}
-    {% if page.subtitle %}
-    <br>
-    <a href="" class='quiet'>
-      <i style="padding-left: 10%">&gt; {{ page.subtitle }}</i>
-    </a>
-    {%endif %}
-  </h1>
-  <!-- <img src="/assets/ArcaneBullshit_ManySkulls1.svg/ArcaneBullshit_ManySkulls1.svg" alt="skulls" id="background"> -->
-
-  <!-- <img src="assets/fall1.jpg" alt="me" id="background"> -->
   <div id="nav">
     <h1 class="bigger" id="name">Charlotte Schluger</h1>
     <!-- <h2 class="name-arrow" id="name-arrow-left">&#8592; </h2> -->
@@ -53,6 +32,24 @@
         %}>Photos</a>
     </h3>
   </div>
+  <h1 id="pwd"> 
+    &#9733;
+    <a href="https://charlotte-schluger.com/" class='quiet'>
+      <i>charlotte-schluger.com</i>
+    </a>
+    {% if page.title!="home" %}
+    <br>
+    <a href="/{{ page.title }}" class='quiet'>
+      <i style="padding-left: 5%"> / {{ page.title }}</i>
+    </a>
+    {%endif %}
+    {% if page.subtitle %}
+    <br>
+    <a href="" class='quiet'>
+      <i style="padding-left: 10%"> / {{ page.subtitle }}</i>
+    </a>
+    {%endif %}
+  </h1>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
