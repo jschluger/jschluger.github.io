@@ -77,12 +77,11 @@ body #plain {
 }
 
 #photo-contents {
-    text-align: left;
+    text-align: center;
 }
 
 #photo-contents img{
-    border: 8px solid white;
-    margin: px;
+    border: .5cqw solid white;
     display: inline;
 }
 .imageSectionTitle {
