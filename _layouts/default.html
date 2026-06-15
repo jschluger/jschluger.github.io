@@ -22,22 +22,22 @@
     <!-- <h2 class="name-arrow" id="name-arrow-right"> &#8594;</h2> -->
     <!-- <h2 class="name-arrow" id="name-arrow-refresh" style="margin-left:5%">&#10227;</h2> -->
     <h3>
-      <a href="/" {% if page.title=="home" %} class="thispage" {% endif %}>
+      <a href="/" {% if page.title=="Home" %} class="thispage" {% endif %}>
         Home</a>
       &#183;
-      <a href="/professional" {% if page.title=="professional" %} class="thispage" {%
+      <a href="/professional" {% if page.title=="Professional" %} class="thispage" {%
         endif %}>Professional</a>
       &#183;
-      <a href="/photos" {% if page.title=="photos" %} class="thispage" {% endif
+      <a href="/photos" {% if page.title=="Photos" %} class="thispage" {% endif
         %}>Photos</a>
     </h3>
   </div>
   <h1 id="pwd"> 
     &#9733;
     <a href="https://charlotte-schluger.com/" class='quiet'>
-      <i>charlotte</i>
+      <i>Charlotte</i>
     </a>
-    {% if page.title!="home" %}
+    {% if page.title!="Home" %}
     <br>
     <a href="/{{ page.title }}" class='quiet'>
       <i style="padding-left: 5%"> &gt; {{ page.title }}</i>
@@ -81,7 +81,7 @@
   
   <script src="/scripts/style.js"></script>
   <!-- <script src="/scripts/header.js"></script> -->
-  {% if page.title=="photos" %}
+  {% if page.title=="Photos" %}
   <script src="/scripts/photos.js"></script>
   {% endif %}
   <script src="/scripts/bounce2.js"></script>
