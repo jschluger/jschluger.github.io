@@ -39,7 +39,7 @@
     </a>
     {% if page.title!="Home" %}
     <br>
-    <a href="/{{ page.title }}" class='quiet'>
+    <a href="/{{ page.title | downcase }}" class='quiet'>
       <i style="padding-left: 5%"> &gt; {{ page.title }}</i>
     </a>
     {%endif %}
