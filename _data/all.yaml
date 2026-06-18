@@ -1,0 +1,24 @@
+photos0:
+  - name: Photo
+    url: https://lightroom.adobe.com/v2c/spaces/86ad2cb3861245f28155dbe54a2fa67e/assets/e293c838f1e74cfaad86b0e1e8246834/revisions/fe4319bd804f4fbcb8fbf4d2207973af/renditions/25443a90a08aa4c4f52820d73bb8e116
+    width: 45%
+    
+  - name: Photo
+    url: https://lightroom.adobe.com/v2c/spaces/86ad2cb3861245f28155dbe54a2fa67e/assets/afb679f57f3a4a83901e5f90cfd1147d/revisions/6b0430c60b1e4851958fb4efeff7847f/renditions/b29baa41b45d9464906acd16575221e9
+    width: 45%
+    
+  - name: Photo
+    url: https://lightroom.adobe.com/v2c/spaces/86ad2cb3861245f28155dbe54a2fa67e/assets/2d7d1cc577ce4f289a7970eec2f9ba8d/revisions/43406795ab144b18b77a8bb8265fcbe9/renditions/0f329e1e3e0553dbc9b4f2e9dc2b57d8
+    width: 45%
+    
+  - name: Photo
+    url: https://lightroom.adobe.com/v2c/spaces/86ad2cb3861245f28155dbe54a2fa67e/assets/183b091fbd7f49038ff8bb01925726f6/revisions/e2bda5fcb53f4a5daf9e8e6f985d0b1c/renditions/81ec8efb4890d8f4778b1397c8da322c
+    width: 45%
+    
+  - name: Photo
+    url: https://lightroom.adobe.com/v2c/spaces/8c5d9e5c8b064ecc8fa795ba5e00f83a/assets/dd501657625f4fa4bea441eecb07e76f/revisions/f843fb5165d74f5dafcf77083a22cf41/renditions/a459600b001d5d06ec875622c9c01f5e
+    width: 55%
+
+  - name: Dad
+    url: https://lightroom.adobe.com/v2c/spaces/86ad2cb3861245f28155dbe54a2fa67e/assets/2d7e260c268541e69b79b6e991a74b34/revisions/e00b67d6316a4626967228af54bac25c/renditions/40fbece3550cba455e4a804693f1dc5b
+    width: 35%
